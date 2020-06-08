@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    .card {
+        width: 50vw;
+        text-align: center;
+        padding: 30px;
+        margin-top: 10%;
+        // background-color: rgba(50, 50, 93, 0.7);
+        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+        .text {
+            height: auto;
+            margin-bottom: 30px;
+
+            .payment {
+                color: #31325f;
+                font-family: "Helvetica Neue", Helvetica, sans-serif;
+                font-weight: 500;
+                font-size: 70px;
+            }
+
+            .currency {
+                @extend .payment;
+                font-size: 40px;
+                margin-right: 10px;
+            }
+
+            .cents {
+                @extend .payment;
+                font-weight: 400;
+                font-size: 40px;
+            }
+        }
+
+        input {
+            color: #31325f;
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 18px;
+            height: 40px;
+            border: transparent;
+            display: inline-block;
+            padding: 0 10px;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        button {
+            width: 50%;
+            white-space: nowrap;
+            display: inline-block;
+            height: 40px;
+            padding: 0 14px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            text-decoration: none;
+            transition: all 0.15s ease;
+            color: #fff;
+            background: #6772e5;
+        }
+
+        #card-element {
+            padding: 0 10px;
+        }
+
+        .field {
+            margin: 5px 0;
+        }
+    }
+}
